@@ -16,6 +16,7 @@ void setup() {
 }
 
 void loop() {
+  Serial.print(pauseFlag);
 if(pauseFlag == LOW){
   brady();
   tachy();
@@ -31,7 +32,7 @@ void pauseF (){
 
 // if button is pressed reset heart rate average information
 void reset () {
-  heartrate = 60;
+ // heartrate = 60;
 }
 
 // NORMAL FUNCTIONS: Flash lights Tachy at 10 Hz, Brady at 2 Hz
